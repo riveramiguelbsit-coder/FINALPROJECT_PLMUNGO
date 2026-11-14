@@ -1,0 +1,12 @@
+<resources>
+
+    <style name="Theme.PlmunGO"
+        parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">#1A2F4C</item>
+        <item name="colorPrimaryDark">#14243A</item>
+        <item name="colorAccent">#2878F5</item>
+
+    </style>
+
+</resources>

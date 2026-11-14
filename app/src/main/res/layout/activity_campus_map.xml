@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EAF1FA"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PLMUN GO"
+        android:textColor="#1A2F4C"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CAMPUS MAP"
+        android:textColor="#2878F5"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Interactive Campus Map -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:clipChildren="true"
+        android:clipToPadding="true">
+
+        <com.github.chrisbanes.photoview.PhotoView
+            android:id="@+id/ivCampusMap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/plmun_campus_map"
+            android:scaleType="fitCenter"
+            android:contentDescription="PLMUN Interactive Campus Map" />
+
+    </FrameLayout>
+
+    <!-- Campus Locations -->
+    <Button
+        android:id="@+id/btnLocations"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="VIEW CAMPUS LOCATIONS"
+        android:textSize="14sp"
+        android:layout_marginTop="12dp" />
+
+    <!-- Zoom Controls -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:id="@+id/btnZoomOut"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="ZOOM OUT"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="RESET"
+            android:textSize="11sp" />
+
+        <Button
+            android:id="@+id/btnZoomIn"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:text="ZOOM IN"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="BACK"
+        android:layout_marginTop="5dp" />
+
+</LinearLayout>

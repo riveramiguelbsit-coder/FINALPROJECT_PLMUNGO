@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/plmun"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PLMUN GO"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#ffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MAIN BUILDING"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="18dp"
+            android:background="@drawable/field_rounded_bg"
+            android:elevation="5dp">
+
+            <Button
+                android:id="@+id/btnGround"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="GROUND FLOOR"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_home_button"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/btnSecond"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="2ND FLOOR"
+                android:background="@drawable/bg_home_button"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp" />
+
+            <Button
+                android:id="@+id/btnThird"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="3RD FLOOR"
+                android:background="@drawable/bg_home_button"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp" />
+
+            <Button
+                android:id="@+id/btnFourth"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="4TH FLOOR"
+                android:background="@drawable/bg_home_button"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:id="@+id/tvRooms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select a floor to view its rooms."
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:background="@drawable/field_rounded_bg"
+                android:gravity="center"
+                android:padding="18dp"
+                android:layout_marginTop="15dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="BACK"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+</ScrollView>
